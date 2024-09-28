@@ -7,12 +7,12 @@ MTN MoMoPay API without leaving your cli.
 
 - [x] Complete Helper classes
   - [x] SandboxProvision (100%)
-  - [ ] Collection (10%)
-  - [ ] Disbursment (0%)
-  - [ ] Remittance (0%)
-- [x] Complete main class (25%)
+  - [ ] Collection (50%)
+  - [ ] Disbursment (10%)
+  - [ ] Remittance (10%)
+- [x] Complete main class (50%)
 - [ ] Add Public functions
-- [ ] Add tests
+- [x] Add tests
 
 ## Features
 
