@@ -1,5 +1,4 @@
 ﻿# !bin/pwsh
-# PsMoMo.Features.Tests.ps1
 
 BeforeAll {
   $Modversion = '<Modversion>'
@@ -7,9 +6,9 @@ BeforeAll {
   if (![string]::IsNullOrWhiteSpace($Modversion)) {
     Import-Module $BuildOutpt.Parent.FullName -Version $Modversion
   } else {
-    Import-Module $BuildOutpt.FullName
+    Import-Module $BuildOutpt.FullName # Import-Module PsMoMo
   }
-  # Initialize the PsMoMo object
+  Import-Module dotEnv
   $script:mm = [PsMoMo]::new()
 }
 Describe "PsMoMo Module Tests" {
