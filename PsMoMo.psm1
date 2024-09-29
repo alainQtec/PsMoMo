@@ -2,6 +2,7 @@ using namespace System.Management.Automation;
 using namespace System.Management.Automation.Language
 
 using module Private/models/models.psm1
+using module Private/clitools/clitools.psm1
 using module Private/exceptions/exceptions.psm1
 
 #region Classes
@@ -474,7 +475,7 @@ class PsMoMo {
   static [MoMoEnvironment] $environment = (Get-Env NEXT_PUBLIC_MTN_ENVIRONMENT).value;
   static [ValidateNotNullOrWhiteSpace()][string] $CallbackHost = (Get-Env NEXT_PUBLIC_MTN_CALLBACK_HOST).value;
 
-  PsMoMo() { }
+  PsMoMo() { [clitools]::writBanner() }
   PsMoMo([MoMoEnvironment]$environmen) { $this::environment = $environmen }
 
   [SandboxProvisioning] CreateSandboxProvisioning([String]$SubscriptionKey) {
