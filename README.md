@@ -28,7 +28,7 @@ MTN MoMoPay API without leaving your cli.
 
 ⤷ **Answer goes here**
 
-- Foo
+- [ex](https://www.powershellgallery.com/packages/Pipeworks/1.9.9.4/Content/Get-Paid.ps1)
 - Bar
 
 `Explain important topic`
