@@ -3,6 +3,8 @@
 [PsMoMo](https://www.powershellgallery.com/packages/PsMoMo) is a module to test
 MTN MoMoPay API without leaving your cli.
 
+[result] by using [feature] for [whom]
+
 **WIP/TODOs**
 
 - [x] Complete Helper classes
